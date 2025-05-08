@@ -1,4 +1,5 @@
 # Integracion de las funciones en un solo archivo
+
 from estudiantes import registro
 
 if __name__ == "__main__":
