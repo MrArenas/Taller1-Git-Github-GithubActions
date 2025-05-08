@@ -24,3 +24,9 @@ def mostrar_estudiantes_tabla(estudiantes):
     print("-" * 26)
     for est in estudiantes_ordenados:
         print(f"{est['nombre']:<20} {est['nota']:>5.1f}")
+
+def promedio_estudiantes(estudiantes):
+    if not estudiantes:
+        return 0.0
+    suma_notas = sum(est["nota"] for est in estudiantes)
+    return suma_notas / len(estudiantes)
